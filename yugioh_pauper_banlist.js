@@ -20,8 +20,9 @@ $(document).ready(function () {
   );
 
   $.getJSON(
-    endpoint +
-      "?rarity=Uncommon&rarity=Super Rare&rarity=Ultra Rare&rarity=Secret Rare",
+    endpoint 
+    // + "?rarity=Uncommon&rarity=Super Rare&rarity=Ultra Rare&rarity=Secret Rare"
+    ,
     function (json) {
       $.each(json.data, function (ix, obj) {
         let cards = [];
